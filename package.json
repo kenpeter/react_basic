@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "npm run build",
-    "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot --port 8000",
+    "build": "webpack -d && cp src/index.html dist/index.html && cp src/favicon.ico dist/favicon.ico && webpack-dev-server --content-base src/ --inline --hot --port 8000",
     "build:prod": "webpack -p && cp src/index.html dist/index.html"
   },
   "author": "",

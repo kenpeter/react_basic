@@ -7,7 +7,7 @@ export class Home extends React.Component {
       name: props.name,
       age: props.initAge,
       initHomeLink: props.initHomeLink,
-      status: 0,
+      status: 0
     };
     
     console.log("constructor");
@@ -36,12 +36,13 @@ export class Home extends React.Component {
   }
   
   componentDidUpdate(prevProps, prevState) {
-    console.log("componentWillUpdate", prevProps, prevState);
+    console.log("componentDidUpdate", prevProps, prevState);
   }
   
   componentWillUnmount() {
     console.log("componentWillUnmount");  
   }
+  
   
   onMakeOlder() {
     this.setState({
@@ -81,6 +82,8 @@ export class Home extends React.Component {
         <br/>
         <br/>
         <button className="btn btn-primary" onClick={() => this.onChangeHomeLink()}>change link name</button>
+        <br/>
+        <br/>
       </div>
     );
   }
